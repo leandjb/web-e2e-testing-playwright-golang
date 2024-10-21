@@ -10,6 +10,9 @@ This repository is designed for end-to-end (E2E) web application testing using P
 ```
 go get github.com/playwright-community/playwright-go
 ```
+```
+go run github.com/playwright-community/playwright-go/cmd/playwright install
+```
 
 3. Excecute Playwright-Go for Web E2E Automation (https://www.tucarro.com.co/)
 
