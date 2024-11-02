@@ -8,6 +8,9 @@ import (
 )
 
 func main() {
+	url := "https://www.tucarro.com.co/"
+	itemToSearch := "BMW"
+
 	pw, err := playwright.Run()
 	if err != nil {
 		panic(err)
@@ -27,8 +30,7 @@ func main() {
 		panic(err)
 	}
 
-	// Navigate to PakWheels website
-	if _, err = page.Goto("https://www.tucarro.com.co/"); err != nil {
+	if _, err = page.Goto(url); err != nil {
 		panic(err)
 	}
 	fmt.Println("Navigated to:", page.URL())
@@ -44,7 +46,7 @@ func main() {
 		panic(err)
 	}
 
-	if err = searchBox.Fill("Volkswagen"); err != nil {
+	if err = searchBox.Fill(itemToSearch); err != nil {
 		panic(err)
 	}
 
