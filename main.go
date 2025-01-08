@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/playwright-community/playwright-go"
+	// "github.com/playwright-community/playwright-go" //It should be enabled always when run the scrapper (go run main.go)
 	"os"
 	"strconv"
 )
