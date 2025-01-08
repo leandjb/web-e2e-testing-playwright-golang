@@ -9,7 +9,7 @@ import (
 
 func main() {
 	url := "https://www.tucarro.com.co/"
-	itemToSearch := "BMW"
+	itemToSearch := "Porsche"
 
 	pw, err := playwright.Run()
 	if err != nil {
